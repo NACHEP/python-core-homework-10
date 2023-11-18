@@ -126,8 +126,6 @@ class AddressBook(UserDict):
 #Додавання записів.
 # Реалізовано метод add_record, який додає запис до self.data.
     def add_record(self, record: Record):
-        # if not isinstance (record, Record):
-        #     record = Record(record)
         self.data[record.name.value] = record
 
 #Пошук записів за іменем.
